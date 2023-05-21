@@ -24,6 +24,11 @@
        h1 {
            text-align: center;
        }
+       .caracteres-restantes {
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+
    </style>
 </head>
 <body>
@@ -61,9 +66,10 @@
                         <label for="email">Correo:</label>
                         <input type="email" id="email" name="email" maxlength="30" required><br><br>
                         
-                        <label for="comentario">Comentario (máximo 100 caracteres):</label><br>
-                        <textarea rows="5" cols="30" id="comentario" name="comentario" maxlength="100" required></textarea><br><br>
-                        
+                        <label for="comentario">¿Por que crees que tenes que ser el ganador?</label><br>
+                        <textarea rows="5" cols="30" id="comentario" name="comentario" maxlength="100" required></textarea><br>
+                        <small class="caracteres-restantes">Máximo 100 caracteres</small><br><br>
+
                         <input type="submit" value="Enviar">
                       </form>
                 </td>
