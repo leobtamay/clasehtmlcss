@@ -1,0 +1,93 @@
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f3263;
+    color: #fff;
+}
+
+header img {
+    margin-right: 10px;
+}
+
+/* Estilos para el título principal */
+h1 {
+    font-size: 24px;
+}
+
+/* Estilos para la barra lateral */
+aside {
+    width: 200px;
+    background-color: #1f3263;
+    padding: 20px;
+}
+
+/* Estilos para el título de la barra lateral */
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Estilos para la navegación en la barra lateral */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #1f3263;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    flex: 1;
+    margin-right: 10px;
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para los párrafos */
+p {
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Estilos para el encabezado, la barra lateral, el contenido principal y el pie de página (como se mencionó anteriormente) */
+
+/* Estilos para los párrafos cargados dinámicamente */
+#parrafo p {
+    display: none;
+}
+
+#parrafo p.mostrar {
+    display: block;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
