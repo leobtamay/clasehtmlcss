@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.cointainer{
+    display: grid;
+    grid-template-rows: auto 250px 250px ;
+    grid-template-areas: 
+    "main main main header"
+    "main main main header"
+    "main main main article"
+    "main main main article";
+    border: 1px solid black;
+    margin: 10%;
+
+}
+
+.item1{
+    grid-area: main;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.item2{
+    grid-area: header;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    
+}
+
+.item3{
+    grid-area: article;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
