@@ -1,101 +1,119 @@
-.scroll{
-    overflow: auto;
-    height: 200px; 
-}
-.scroll::-webkit-scrollbar{
-    width: 40px;
-}
-.scroll::-webkit-scrollbar-track{
-    background-color: black;
-}
-.scroll::-webkit-scrollbar-thumb{
-    background-color: white;
-    border-radius: 10px;
-    border: 3px solid red;
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
-.flex-container{
+.container{
+    display: grid;
+    grid-template-rows: auto auto 100px 100px; 
+    /* grid-column: 1fr 5fr; */
+    grid-template-areas: 
+    "header main main main"
+    "header main main main"
+    "header article article article"
+    "footer footer footer footer";
+}
+
+.item1{
+    grid-area: header;
+    background-color: rgb(255, 255, 255);
     display: flex;
-    background-color: gray;
-    justify-content: center;
-    align-items: center;
-    flex-wrap:wrap;
-    height: 100vh;
-    /* align-items 
-    align-self
-    flex-wrap
-    flex-direction
-    flex-flow
-    justify-content
-    */
-}
-.flex-item{
-    background-color: black;
-    width: 100px;
-    margin: 10px;
-    color: white;
-    font-size: 50px;
-}
- 
-.flex-main{
-    display: flex;
-    background: grey;
-    justify-content: center;
-    align-items: center;
-}
-.flex-main-item1,.flex-main-item2,.flex-main-item3{
-    width: 25%;
-    background-color: bisque;
-    font-size: 50px;
-}
-.flex-main-item2{
-    display: flex;
-    align-items: center;
     flex-direction: column;
-    background-color: black;
-    color: white;
-    font-size: 50px;
-}
-.flex-one{
-    display: flex;
-    height: 30vh;
-}
-.flex-one .uno{
-    width: 30%;
-    border: 1px solid;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-start;
 }
 
-.flex-one .dos{
-    width: 70%;
-    border: 1px solid;
+.item1 img{
+    margin: 0 auto;
+    /* padding: 20px;  */
+    padding-top: 20px;
+    padding-right: 30px;
 }
-.flex-dos{
+
+.item1 nav {
+    margin-top: 20px;
+    align-self: center;
+   color: rgb(51, 211, 158);
+   
+}
+
+.item1 ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.item1 li {
+    margin-bottom: 20px;
+}
+
+.item2{
+    grid-area: main;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.item2 img {
+        margin: 0 auto;
+        /* padding: 20px;  */
+        padding-top: 20px;
+        /* display: grid; */
+        max-width: 1200px;
+        max-height: 400px;
+        aspect-ratio: 2/1;
+        width: 100%;
+        height: 100%;
+        transition: scale 400ms;
+        /* gap: 3rem; */
+        /* grid-template-columns: repeat(auto-fit, minmax(min(300px,100%), 1fr)); */
+
+}
+
+.item2:hover img{
+    scale: 120%;
+}
+
+.item3{
+    grid-area: article;
+    /* background-color: aqua; */
     display: flex;
-    height: 70vh;
-    border: 1px solid;
+    
 }
-.flex-dos .uno{
-    flex-grow: 6;
-    border: 3px solid red;
-    order: 2;
+
+.item3 div{
+    flex-grow: 12;
+    padding: 20px;
+    /* justify-content: center;
+    align-items: center; */
 }
-.flex-dos .dos{
+
+.item3 h3{
+    margin: 0;
+}
+
+.item3 .TasteMakers {
+    background-color: rgb(133, 255, 214);
     flex-grow: 3;
-    order: 1;
-    border: 3px solid red;
 }
-.flex-dos .tres{
+
+.item3 .Blog{
+    background-color: rgb(190, 248, 229);
     flex-grow: 3;
-    order: 3;
-    border: 3px solid red;
-    /*
-    order
-    flex-grow
-    align-self
-    flex-shrink
-    */
 }
-.box3{
-    align-self: stretch;
-    flex-shrink: 2;
+
+.item3 .Alist {
+    background-color: rgb(215, 255, 242);
+    flex-grow: 3;
+}
+
+.item3 .Contribute{
+    background-color: rgb(238, 255, 249);
+    flex-grow: 3;
+}
+
+.item4{
+    grid-area: footer;
+    background-color: brown;
 }
