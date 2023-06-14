@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.cointainer{
+    display: grid;
+    grid-template-rows: 400px 200px 200px;
+    grid-template-areas: 
+    "one one one"
+    "two three four"
+    "two five .";
+    margin: 10%;
+}
+
+.item1{
+    grid-area: one;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.item1 .a{
+    flex-grow: 4;
+    background-color: rgb(195, 255, 235);
+    margin-bottom: 5px;
+}
+
+.item1 .b{
+    flex-grow: 4;
+    background-color: rgb(195, 255, 235);
+    margin-bottom: 5px;
+}
+
+.item1 .c{
+    flex-grow: 4;
+    background-color: rgb(195, 255, 235);
+}
+
+.item2{
+    grid-area: two;
+    background-color: rgb(43, 73, 63);
+}
+
+.item3{
+    grid-area: three;
+    background-color: rgb(189, 236, 58);
+}
+
+.item4{
+    grid-area: four;
+    background-color: rgb(122, 153, 255);
+}
+
+.item5{
+    grid-area: five;
+    background-color: rgb(213, 137, 248);
+}
