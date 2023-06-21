@@ -3,75 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratorio</title>
+    <title>cards products responsive</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<div class="layout">
-    <header class="hero">
-
-        <nav class="nav container" id="nav">
-            <h2 class="nav__logo">Leonardo</h2>
-
-            <ul class="nav__links">
-
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Inicio</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Blog</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Acerca de</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Contacto</a>
-                </li>
-
-            </ul>
-
-            <a href="#nav" class="nav__hamburguer">
-                <img src="img/menu.svg" class="nav__icon">
-            </a>
-
-            <a href="#" class="nav__close">
-                <img src="img/close.svg" class="nav__icon">
-            </a>
-
-        </nav>
-        
-    </header>
-
-    <main>
-        <article class="one">
-            <div class="grid">
-                <img src="img/ravioles.jpg" alt="espaguetis" class="galery">
-                <img src="img/ravioles.jpg" alt="ravioles" class="galery">
-                <img src="img/ravioles.jpg" alt="arroz" class="galery galery3">
-                <img src="img/ravioles.jpg" alt="espaguetis" class="galery">
-                <img src="img/ravioles.jpg" alt="ravioles" class="galery">
-                <!-- <img src="img/ravioles.jpg" alt="arroz" class="galery">
-                <img src="img/ravioles.jpg" alt="espaguetis" class="galery">
-                <img src="img/ravioles.jpg" alt="ravioles" class="galery">
-                <img src="img/ravioles.jpg" alt="arroz" class="galery"> -->
+    <span class="background">
+        <header class="header">
+            <div class="logo">
+                <h1>Travel Word</h1>
             </div>
-        </article>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Pasajes</a></li>
+                    <li><a href="#">Irlanda</a></li>
+                    <li><a href="#">Francia</a></li>
+                    <li><a href="#">Alemania</a></li>
+                </ul>
+            </nav>
+        </header>
+        <span class="main">
+            <section class="articles">
+                <article>
+                    <figure>
+                        <img src="https://media.cntraveler.com/photos/5aaac20c60ef3f51835c5be5/16:9/w_2580,c_limit/Rock-Of-Cashel-GettyImages-165559826.jpg" alt="Preview" title="Preview">
+                    </figure>
+                    <div class="article-preview">
+                        <h2>Irlanda</h2>
+                        <p>
+                            Descubre la magia de Irlanda. Paisajes impresionantes, cultura vibrante y una historia fascinante te esperan. Sumérgete en la belleza de la Isla Esmeralda y vive una experiencia inolvidable.¡Viaja a Irlanda ahora! 
+                            <a href="#" class="read-more" title="Read More">Read more</a>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://assets.editorial.aetnd.com/uploads/2019/03/topic-london-gettyimages-760251843-feature.jpg" alt="Preview" title="Preview">
+                    </figure>
+                    <div class="article-preview">
+                        <h2>England</h2>
+                        <p>
+                            ¡Descubre la magia de Inglaterra! Maravíllate con Londres, los encantos de Stonehenge y los paisajes de los Cotswolds. Sumérgete en su historia milenaria y vive experiencias inolvidables.  ¡Viaja a Inglaterra!    
+                            <a href="#" class="read-more" title="Read More">Read more</a>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900" alt="Preview" title="Preview">
+                    </figure>
+                    <div class="article-preview">
+                        <h2>France</h2>
+                        <p>
+                            Descubre la magia de Francia. Paisajes únicos, cultura vibrante y una historia fascinante te esperan. Sumérgete en la belleza de los viñedos de Burdeos y vive una experiencia inolvidable.   ¡Viaja a Francia ahora!
+                            <a href="#" class="read-more" title="Read More">Read more</a>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://media.timeout.com/images/105737732/image.jpg" alt="Preview" title="Preview">
+                    </figure>
+                    <div class="article-preview">
+                        <h2>Spain</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis illum vel voluptate fugit itaque rem earum quis reprehenderit similique autem et velit totam modi libero labore, vitae quibusdam voluptatem!
+                            <a href="#" class="read-more" title="Read More">Read more</a>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://study-eu.s3.amazonaws.com/uploads/image/path/306/wide_fullhd_germany-brandenburger-tor.jpg" alt="Preview" title="Preview">
+                    </figure>
+                    <div class="article-preview">
+                        <h2>Germany</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis illum vel voluptate fugit itaque rem earum quis reprehenderit similique autem et velit totam modi libero labore, vitae quibusdam voluptatem!
+                            <a href="#" class="read-more" title="Read More">Read more</a>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://aunclicdelaaventura.com/wp-content/uploads/2021/11/Que-ver-en-Lisboa.jpg" alt="Preview" title="Preview">
+                    </figure>
+                    <div class="article-preview">
+                        <h2>Portugal</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis illum vel voluptate fugit itaque rem earum quis reprehenderit similique autem et velit totam modi libero labore, vitae quibusdam voluptatem!
+                            <a href="#" class="read-more" title="Read More">Read more</a>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://media.timeout.com/images/105237855/image.jpg" alt="Preview" title="Preview">
+                    </figure>
+                    <div class="article-preview">
+                        <h2>Norway</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis illum vel voluptate fugit itaque rem earum quis reprehenderit similique autem et velit totam modi libero labore, vitae quibusdam voluptatem!
+                            <a href="#" class="read-more" title="Read More">Read more</a>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://media.cntraveler.com/photos/5b7c54f93fdf93135bc6c782/4:3/w_3796,h_2847,c_limit/GettyImages-841848486.jpg" alt="Preview" title="Preview">
+                    </figure>
+                    <div class="article-preview">
+                        <h2>Italy</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis illum vel voluptate fugit itaque rem earum quis reprehenderit similique autem et velit totam modi libero labore, vitae quibusdam voluptatem!
+                            <a href="#" class="read-more" title="Read More">Read more</a>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://www.greece-is.com/wp-content/uploads/2022/05/acropolis_sun_weather_shutter-1200x750.jpg" alt="Preview" title="Preview">
+                    </figure>
+                    <div class="article-preview">
+                        <h2>Greece</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis illum vel voluptate fugit itaque rem earum quis reprehenderit similique autem et velit totam modi libero labore, vitae quibusdam voluptatem!
+                            <a href="#" class="read-more" title="Read More">Read more</a>
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </span>
 
-        <div class="two">
-            <div class="item item1"></div>
-            <div class="item item2"></div>
-            <div class="item item3"></div>
-            <div class="item item4"></div>
-        </div>
-    </main>
+        <section class="gallery">
+            <figure class="gallery__item gallery__item--1"><img src="https://www.greece-is.com/wp-content/uploads/2022/05/acropolis_sun_weather_shutter-1200x750.jpg" alt="Gallery image 1" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--2"><img src="https://media.cntraveler.com/photos/5b7c54f93fdf93135bc6c782/4:3/w_3796,h_2847,c_limit/GettyImages-841848486.jpg" alt="Gallery image 2" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--3"><img src="https://media.timeout.com/images/105237855/image.jpg" alt="Gallery image 3" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--4"><img src="https://aunclicdelaaventura.com/wp-content/uploads/2021/11/Que-ver-en-Lisboa.jpg" alt="Gallery image 4" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--5"><img src="https://study-eu.s3.amazonaws.com/uploads/image/path/306/wide_fullhd_germany-brandenburger-tor.jpg" alt="Gallery image 5" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--6"><img src="https://media.timeout.com/images/105737732/image.jpg" alt="Gallery image 6" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--7"><img src="https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900" alt="Gallery image 7" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--8"><img src="https://assets.editorial.aetnd.com/uploads/2019/03/topic-london-gettyimages-760251843-feature.jpg" alt="Gallery image 8" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--9"><img src="https://media.cntraveler.com/photos/5aaac20c60ef3f51835c5be5/16:9/w_2580,c_limit/Rock-Of-Cashel-GettyImages-165559826.jpg" alt="Gallery image 9" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--10"><img src="https://images.philips.com/is/image/PhilipsConsumer/CA20160822_CO_001-AAA-es_MX-001_Obelisco?$jpglarge$&wid=4000" alt="Gallery image 10" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--11"><img src="https://am990formosa.com/wp-content/uploads/2016/12/00-CRISTO.jpg" alt="Gallery image 11" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--12"><img src="https://noticias.unsam.edu.ar/wp-content/uploads/2019/08/metropolitan-cathedral-zocalo-mexico-city.jpg_610108952.jpg" alt="Gallery image 12" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--13"><img src="https://larutachina.com/wp-content/uploads/2022/03/85034e3e2f96c182092ffa6c05af9212.jpg" alt="Gallery image 13" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--14"><img src="https://images.freeimages.com/images/large-previews/e2b/statue-of-buddha-in-india-1566028.jpg" alt="Gallery image 14" class="gallery__img"></figure>
 
-    <footer>
-        <div class="subscribe"></div>
-        <div class="socialmedia"></div>
-    </footer>
-</div>    
-</body>
-</html>
+
+        </section>
+
+        <footer class="footer">
+            <div class="subscribe">
+                <form action="#">
+                    <div class="form-box">
+                        <input type="text" name="EmailAddress" placeholder="Ingrese su Mail">
+                        <button type="submit">Suscribirse</button> 
+                    </div>               
+                </form>
+            </div>
+            <div class="socialmedia">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </footer>
+    </span>
